@@ -1,0 +1,139 @@
+@import "./sizes";
+@mixin fromPhone {
+  @media (min-width: #{$phone-width}) {
+    @content;
+  }
+}
+
+@mixin fromTablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin fromDesktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin destyledInput() {
+  background-color: transparent;
+  border: 0px solid;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+  background-clip: padding-box;
+}
+
+@mixin iconButton($dimension) {
+  @include destyledInput;
+  line-height: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  svg {
+    width: $dimension;
+    height: $dimension;
+  }
+}
+
+@mixin destyledButton() {
+  @include destyledInput;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin packageNameDisplay() {
+  line-height: 1.3;
+  word-break: break-all;
+}
+
+@mixin header() {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+@mixin display1() {
+  @include header;
+  letter-spacing: 0.015em;
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  margin-top: 0;
+  margin-bottom: 0.67em;
+  @media (min-width: 320px) and (max-width: 991px) {
+    font-size: calc(2.5rem + 16 * (100vw - 320px) / (992 - 320));
+  }
+  @include fromDesktop {
+    font-size: calc(2.5rem + 16px);
+  }
+}
+
+@mixin display2() {
+  @include header;
+  font-size: 2rem;
+  line-height: 1.2em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  @media (min-width: 320px) and (max-width: 991px) {
+    font-size: calc(2rem + 8 * (100vw - 320px) / (992 - 320));
+  }
+  @include fromDesktop {
+    font-size: calc(2rem + 8px);
+  }
+}
+
+@mixin paragraph() {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+@mixin displayParagraph() {
+  @include paragraph;
+  letter-spacing: 0.015em;
+  @media (min-width: 320px) and (max-width: 991px) {
+    font-size: calc(1rem + 8 * (100vw - 320px) / (992 - 320));
+  }
+  @include fromDesktop {
+    font-size: calc(1rem + 8px);
+  }
+}
+
+@mixin blockPadding() {
+  padding: 0.75em 1em;
+}
+
+@mixin visuallyHidden() {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@mixin underlineOnHover($color) {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 200ms;
+  &:hover {
+    border-bottom: 1px solid $color;
+  }
+}
