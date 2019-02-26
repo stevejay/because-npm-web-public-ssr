@@ -1,10 +1,9 @@
-import Document, { Head } from "next/document";
+import Document, { Head, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
   render() {
-    const { html } = this.props;
     return (
-      <html lang="en">
+      <html>
         <Head>
           <meta charSet="utf-8" />
           <link rel="shortcut icon" href="/static/favicon.png" />
@@ -16,7 +15,8 @@ export default class MyDocument extends Document {
           />
         </Head>
         <body>
-          <div id="__next" dangerouslySetInnerHTML={{ __html: html! }} />
+          <Main />
+          <NextScript />
         </body>
       </html>
     );
