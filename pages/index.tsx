@@ -1,14 +1,16 @@
-import * as React from 'react'
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import { stubTrue } from "lodash";
+import React from "react";
+import { ScrollToTop } from "../shared/scroll";
+import ContributingSection from "../modules/home/contributing-section";
+import DiscoveringSection from "../modules/home/discovering-section";
+import styles from "./index.module.scss";
 
-const IndexPage: React.FunctionComponent = () => {
-  return (
-    <Layout title="Home | Next.js + TypeScript Example">
-      <h1>Hello Next.js 👋</h1>
-      <p><Link href='/about'><a>About</a></Link></p>
-    </Layout>
-  )
-}
+const IndexPage = () => (
+  <main className={styles.container}>
+    <ScrollToTop />
+    <DiscoveringSection />
+    <ContributingSection />
+  </main>
+);
 
-export default IndexPage;
+export default React.memo(IndexPage, stubTrue);

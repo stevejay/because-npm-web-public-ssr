@@ -1,0 +1,79 @@
+@import "styles/_base.scss";
+
+.section {
+  background-color: $grey-50;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  @include fromTablet {
+    flex-direction: row;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+
+  @include fromTablet {
+    &:nth-child(1) {
+      order: 2;
+    }
+
+    &:nth-child(2) {
+      order: 1;
+    }
+  }
+}
+
+.header {
+  @include display2;
+  color: $grey-900;
+}
+
+.displayParagraph {
+  @include displayParagraph;
+  color: $grey-900;
+}
+
+.paragraph {
+  @include paragraph;
+  color: $grey-900;
+}
+
+.contributingImage {
+  width: 250px;
+  margin: 0 auto $gutter * 1.25;
+
+  @include fromPhone {
+    width: 275px;
+  }
+
+  @include fromTablet {
+    margin-left: $gutter * 3;
+    margin-right: 0;
+    width: 250px;
+  }
+}
+
+.tweet {
+  @include displayParagraph;
+  @include blockPadding;
+  background-color: $grey-900;
+  color: $primary-300;
+  border-radius: $border-radius;
+  max-width: 29rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  strong {
+    color: $primary-600;
+  }
+
+  @include fromTablet {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: inherit;
+  }
+}

@@ -6,6 +6,7 @@ import "../styles/app.scss";
 import { Page, NotFooter } from "../shared/page";
 import { Header } from "../modules/header";
 import { Footer } from "../modules/footer";
+import { ScrollListener } from "../shared/scroll";
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }: NextAppContext) {
@@ -25,7 +26,7 @@ class MyApp extends App {
       <Container>
         <Page>
           <NotFooter>
-            {/* <ScrollListener /> */}
+            <ScrollListener />
             <Header />
             {/* <SearchBar /> */}
             <Component {...pageProps} />

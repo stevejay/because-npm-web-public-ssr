@@ -11,13 +11,13 @@ const Footer = () => (
       <p className={styles.copyright}>&copy; 2018 Middle Engine Software Ltd</p>
     </div>
     <nav className={styles.nav}>
-      <Link href="/terms" as="/terms">
+      <Link href="/terms">
         <a>Terms</a>
       </Link>
-      <Link href="/privacy" as="/privacy">
+      <Link href="/privacy">
         <a>Privacy &amp; Cookies</a>
       </Link>
-      <Link href="/credits" as="/credits">
+      <Link href="/credits">
         <a>Credits</a>
       </Link>
     </nav>
