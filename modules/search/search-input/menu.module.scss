@@ -1,0 +1,50 @@
+@import "styles/_base.scss";
+
+.menu {
+  position: absolute;
+  background-color: $grey-50;
+  left: -30px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  max-height: calc(100vh - 7rem);
+  overflow-y: scroll;
+
+  @include fromPhone {
+    left: 0px;
+    right: 30px;
+  }
+
+  &.closed {
+    @include visuallyHidden;
+  }
+}
+
+.menuItem {
+  list-style: none;
+  margin: 0;
+  padding: 0.6em 1em;
+  border-bottom: 1px solid $grey-300;
+  cursor: pointer;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  &.highlighted {
+    background-color: $grey-100;
+  }
+}
+
+.menuItem h3 {
+  @include packageNameDisplay;
+  margin: 0;
+  text-transform: lowercase;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: $primary-800;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.005em;
+}

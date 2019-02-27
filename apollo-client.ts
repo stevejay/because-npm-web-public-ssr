@@ -1,6 +1,7 @@
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { ApolloClient } from "apollo-client";
 import { ApolloLink, Observable } from "apollo-link";
+import fetch from "isomorphic-unfetch";
 import { onError } from "apollo-link-error";
 import { HttpLink } from "apollo-link-http";
 import { withClientState } from "apollo-link-state";
@@ -9,6 +10,13 @@ import { get, merge, some } from "lodash";
 import log from "loglevel";
 import { resolvers as packageResolvers } from "./modules/package";
 import { resolvers as searchResolvers } from "./modules/search";
+
+// Polyfill fetch() on the server (used by apollo-client)
+// @ts-ignore
+if (!process.browser) {
+  // @ts-ignore
+  global.fetch = fetch;
+}
 
 const cache: any = new InMemoryCache({
   cacheRedirects: {
