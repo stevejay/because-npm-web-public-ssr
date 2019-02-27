@@ -1,5 +1,5 @@
 import React from "react";
-import Router from "next/router";
+import { Router } from "../../../routes";
 import { graphql, MutateProps } from "react-apollo";
 import { useAppBus } from "../../../shared/app-bus";
 import { UpdateSearchParams } from "../graphql/mutations";
@@ -24,7 +24,7 @@ const SearchBarHandler = ({ mutate }: Props) => {
     mutate({ variables: { searchTerm: finalSearchTerm } }).then(() => {
       setSearchTerm("");
       appBus.searchBarBlur.emit();
-      Router.push("/search");
+      Router.pushRoute("search");
       // if (!location.pathname.startsWith("/search")) {
       //   history.push("/search");
       // }

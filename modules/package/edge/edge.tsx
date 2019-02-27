@@ -3,7 +3,7 @@ import React from "react";
 import { IEdge } from "../../../types/domain-types";
 import Expander from "../../../shared/expander";
 import EdgeCommentList from "../edge-comment-list";
-import Link from "next/link";
+import { Link } from "../../../routes";
 
 type Props = {
   isFirst: boolean;
@@ -14,7 +14,7 @@ const Edge = ({ isFirst, entity }: Props) => {
   const headerContent = (
     <span>
       to{" "}
-      <Link href={`/package/${entity.headNodeId}`}>
+      <Link route="package" params={{ nodeId: entity.headNodeId }}>
         <a>{entity.headNodeId}</a>
       </Link>{" "}
       because&hellip;

@@ -6,7 +6,7 @@ import { withAppBus, AppBus } from "../../../shared/app-bus";
 import { AutocompleteNodeSearch } from "../graphql/queries";
 import TypeaheadMenuHandler from "./typeahead-menu-handler";
 import styles from "./search-input.module.scss";
-import Router from "next/router";
+import { Router } from "../../../routes";
 
 const TYPEAHEAD_DEBOUNCE_MS = 400;
 
@@ -117,7 +117,7 @@ class SearchInput extends React.Component<AllProps, State> {
     }
     stateAndHelpers.clearSelection();
     this.props.appBus.searchBarBlur.emit();
-    Router.push(`/package/${selectedItem.id}`);
+    Router.pushRoute("package", { nodeId: selectedItem.id });
     this.resetTypeahead();
   };
 

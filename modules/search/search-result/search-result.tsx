@@ -3,7 +3,7 @@ import React from "react";
 import { FaComment } from "react-icons/fa";
 import { INode } from "../../../types/domain-types";
 import styles from "./search-result.module.scss";
-import Link from "next/link";
+import { Link } from "../../../routes";
 
 type Props = {
   result: INode;
@@ -15,7 +15,7 @@ const EARLY_STOPPING_COUNT = 100;
 
 const SearchResult = ({ result }: Props) => (
   <div className={styles.container}>
-    <Link href={`/package/${result.id}`}>
+    <Link route="package" params={{ nodeId: result.id }}>
       <a className={styles.link}>
         <h2 className={styles.name}>{result.id}</h2>
       </a>

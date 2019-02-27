@@ -1,5 +1,5 @@
 import React from "react";
-import Router from "next/router";
+import { Router } from "../../../routes";
 import { useAppBus } from "../../../shared/app-bus";
 import Button, { ButtonType } from "../../../shared/button";
 import Section from "../section";
@@ -11,7 +11,7 @@ const DiscoveringSection = () => {
 
   const handleClick = () => {
     appBus.searchBarFocus.emit();
-    Router.push("/search");
+    Router.pushRoute("search");
   };
 
   return (

@@ -44,9 +44,7 @@ function renderEdgeCommentList(mocks: Array<ResponseMock>) {
   return render(
     <MockNextContext>
       <MockedProvider mocks={mocks} addTypename={false}>
-        <EdgeList
-          match={{ params: [NODE_ID], isExact: true, path: "/", url: "/" }}
-        />
+        <EdgeList nodeId={NODE_ID} />
       </MockedProvider>
     </MockNextContext>
   );

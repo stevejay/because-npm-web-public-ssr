@@ -1,7 +1,7 @@
 import { isEmpty } from "lodash";
 import React from "react";
 import styles from "./recent-packages.module.scss";
-import Link from "next/link";
+import { Link } from "../../../routes";
 
 type Props = {
   packages: string[] | null;
@@ -19,7 +19,7 @@ const RecentPackages = ({ packages, onLinkClick }: Props) => {
           {filteredPackages.map(nodeId => (
             // TODO onClick used to be on the Link
             <li key={nodeId} className={styles.listItem} onClick={onLinkClick}>
-              <Link href={`/package/${nodeId}`}>
+              <Link route="package" params={{ nodeId }}>
                 <a>{nodeId}</a>
               </Link>
             </li>
