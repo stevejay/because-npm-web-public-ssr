@@ -10,9 +10,13 @@
 
 import { ComponentType } from "react";
 import { LinkProps, Router as TRouter } from "next-routes";
+import * as createRoutes from "next-routes";
+import Routes from "next-routes";
 
-const nextRoutes = require("next-routes");
-const routes = nextRoutes();
+// const createRoutes = require("next-routes");
+
+// @ts-ignore Types are broken
+const routes: Routes = createRoutes();
 
 routes.add("index", "/");
 routes.add("package", "/package/:nodeId");

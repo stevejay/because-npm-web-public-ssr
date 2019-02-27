@@ -22,6 +22,7 @@ const RecentPackagesHandler = ({ mutate, nodeId }: AllProps) => {
   const appBus = useAppBus();
 
   React.useEffect(() => {
+    console.log("RecentPackagesHandler::useEffect", nodeId);
     mutate({ variables: { nodeId } });
   }, [nodeId]);
 

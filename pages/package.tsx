@@ -24,6 +24,7 @@ PackagePage.getInitialProps = async ({ query, res }: any) => {
   if (!nodeId) {
     res.statusCode = 404;
   }
+  console.log("getInitialProps", nodeId);
   return { nodeId };
 };
 

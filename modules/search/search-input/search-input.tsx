@@ -6,7 +6,7 @@ import { withAppBus, AppBus } from "../../../shared/app-bus";
 import { AutocompleteNodeSearch } from "../graphql/queries";
 import TypeaheadMenuHandler from "./typeahead-menu-handler";
 import styles from "./search-input.module.scss";
-import { Router } from "../../../routes";
+import { Router } from "../../../server/routes";
 
 const TYPEAHEAD_DEBOUNCE_MS = 400;
 
@@ -62,6 +62,7 @@ class SearchInput extends React.Component<AllProps, State> {
     const { typeaheadValue } = this.state;
     return (
       <Downshift
+        id="search-input"
         inputValue={value}
         itemToString={SearchInput.itemToString}
         onStateChange={this.handleStateChange}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "../../routes";
+import { Link } from "../../server/routes";
 import styles from "./logo.module.scss";
 
 const Logo = () => (

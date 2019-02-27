@@ -3,7 +3,7 @@ import React from "react";
 import { IEdge } from "../../../types/domain-types";
 import Expander from "../../../shared/expander";
 import EdgeCommentList from "../edge-comment-list";
-import { Link } from "../../../routes";
+import { Link } from "../../../server/routes";
 
 type Props = {
   isFirst: boolean;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Router } from "../../../routes";
+import { Router } from "../../../server/routes";
 import { useAppBus } from "../../../shared/app-bus";
 import Button, { ButtonType } from "../../../shared/button";
 import Section from "../section";

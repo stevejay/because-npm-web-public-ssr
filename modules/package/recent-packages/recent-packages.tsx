@@ -1,7 +1,7 @@
 import { isEmpty } from "lodash";
 import React from "react";
 import styles from "./recent-packages.module.scss";
-import { Link } from "../../../routes";
+import { Link } from "../../../server/routes";
 
 type Props = {
   packages: string[] | null;

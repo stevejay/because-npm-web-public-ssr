@@ -1,5 +1,5 @@
 import React from "react";
-import { Router } from "../../../routes";
+import { Router } from "../../../server/routes";
 import { graphql, MutateProps } from "react-apollo";
 import { useAppBus } from "../../../shared/app-bus";
 import { UpdateSearchParams } from "../graphql/mutations";

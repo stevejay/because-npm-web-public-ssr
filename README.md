@@ -1,5 +1,7 @@
 [![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/with-typescript)
 
+Running nodemon: https://github.com/standy/demo-react-next-typescript-routes-semantic-ui/tree/a73714c1ce91ad4c5079e5d479060a237b4aa366
+
 # TypeScript Next.js example
 
 This is a really simple project that show the usage of Next.js with TypeScript.

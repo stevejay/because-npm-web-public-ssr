@@ -1,6 +1,6 @@
 import { stubTrue } from "lodash";
 import React from "react";
-import { Link } from "../../routes";
+import { Link } from "../../server/routes";
 import Logo from "../../shared/logo";
 import styles from "./footer.module.scss";
 
