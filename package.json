@@ -57,6 +57,7 @@
     "react-delay": "^0.1.0",
     "react-dom": "^16.8.3",
     "react-icons": "^3.4.0",
+    "react-placeholder": "^3.0.2",
     "react-testing-library": "^6.0.0",
     "storybook-host": "^5.0.3",
     "typings-for-css-modules-loader": "^1.7.0",

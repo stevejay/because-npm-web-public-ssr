@@ -1,0 +1,46 @@
+@import "styles/_base.scss";
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: $max-section-width;
+  margin: 0 auto;
+
+  @include fromTablet {
+    flex-direction: row;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: $gutter $gutter 0 $gutter;
+
+  @include fromPhone {
+    margin: $gutter * 2 $gutter * 2 $gutter $gutter * 2;
+  }
+
+  @include fromTablet {
+    margin: $gutter * 2 $gutter $gutter * 2 $gutter * 2;
+  }
+}
+
+.aside {
+  background-color: $primary-200;
+  padding: $gutter;
+  margin: 0 $gutter $gutter $gutter;
+
+  @include fromPhone {
+    margin: 0 $gutter * 2 $gutter * 2 $gutter * 2;
+  }
+
+  @include fromTablet {
+    width: 15rem;
+    align-self: flex-start;
+    flex-shrink: 0;
+    margin: $gutter * 2 $gutter * 2 $gutter * 2 $gutter;
+  }
+}
