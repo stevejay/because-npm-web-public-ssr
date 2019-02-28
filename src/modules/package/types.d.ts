@@ -1,5 +1,4 @@
-import { INode, IEdgeComment } from "../../typings/domain-typings";
-import { ISearchEdges } from "../../typings/graphql-typings";
+import { INode, IEdgeComment, ISearchEdges } from "../../../typings";
 
 // edge search
 

@@ -1,5 +1,6 @@
 ## TODO
 
+- CSS is not always loading properly when navigating client-side
 - https://github.com/zeit/next.js/wiki/Getting-ready-for-production
   - including headers and gzipping
 - Stable locality

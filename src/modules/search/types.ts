@@ -1,5 +1,4 @@
-import { INode } from "../../typings/domain-typings";
-import { ISearchEdges } from "../../typings/graphql-typings";
+import { INode, ISearchEdges } from "../../../typings";
 
 // node search
 

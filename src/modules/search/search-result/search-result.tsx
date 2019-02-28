@@ -1,7 +1,7 @@
 import { stubTrue } from "lodash";
 import React from "react";
 import { FaComment } from "react-icons/fa";
-import { INode } from "../../../../typings/domain-typings";
+import { INode } from "../../../../typings";
 import styles from "./search-result.module.scss";
 import { Link } from "../../../shared/routes";
 

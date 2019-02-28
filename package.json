@@ -4,8 +4,8 @@
   "scripts": {
     "dev": "nodemon server/index.ts",
     "prod": "npm run build && npm start",
-    "build": "cross-env NODE_ENV=production next build && tsc --project tsconfig.server.json",
-    "start": "cross-env NODE_ENV=production node dist/index.js",
+    "build": "cross-env NODE_ENV=production next build && rm -rf ./dist && tsc --project tsconfig.server.json",
+    "start": "cross-env NODE_ENV=production node dist/server/index.js",
     "type-check": "tsc",
     "test": "cross-env CI=1 jest --env=jsdom --colors",
     "test:watch": "jest --env=jsdom --watch",

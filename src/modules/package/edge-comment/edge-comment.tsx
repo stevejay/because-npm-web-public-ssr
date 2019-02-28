@@ -1,5 +1,5 @@
 import React from "react";
-import { IEdgeComment } from "../../../../typings/domain-typings";
+import { IEdgeComment } from "../../../../typings";
 import styles from "./edge-comment.module.scss";
 import formatTimestamp from "./format-timestamp";
 

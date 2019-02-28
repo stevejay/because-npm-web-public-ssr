@@ -1,6 +1,6 @@
 import { stubTrue } from "lodash";
 import React from "react";
-import { IEdge } from "../../../../typings/domain-typings";
+import { IEdge } from "../../../../typings";
 import Expander from "../../../shared/expander";
 import EdgeCommentList from "../edge-comment-list";
 import { Link } from "../../../shared/routes";

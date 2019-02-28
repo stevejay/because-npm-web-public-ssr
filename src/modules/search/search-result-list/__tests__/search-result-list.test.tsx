@@ -1,8 +1,7 @@
 import React from "react";
 import { render } from "react-testing-library";
 import SearchResultList from "../search-result-list";
-import { ISearchNode } from "../../../../../typings/graphql-typings";
-import { INode } from "../../../../../typings/domain-typings";
+import { ISearchNode, INode } from "../../../../../typings";
 import { MockNextContext } from "../../../../shared/test-utils";
 
 function renderSearchResultList(results: Array<ISearchNode<INode>> | null) {
