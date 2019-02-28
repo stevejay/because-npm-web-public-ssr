@@ -2,6 +2,7 @@ import React from "react";
 // import { PackageDetail, RecentPackages } from "../modules/package";
 import { RecentPackages } from "../modules/package";
 import styles from "./package.module.scss";
+import { NextDocumentContext } from "next/document";
 
 type Props = {
   nodeId: string;
@@ -18,13 +19,12 @@ const PackagePage = ({ nodeId }: Props) => (
   </main>
 );
 
-PackagePage.getInitialProps = async ({ query, res }: any) => {
+PackagePage.getInitialProps = async ({ query, res }: NextDocumentContext) => {
   // TODO fix any
   const nodeId = query.nodeId;
   if (!nodeId) {
-    res.statusCode = 404;
+    res!.statusCode = 404;
   }
-  console.log("getInitialProps", nodeId);
   return { nodeId };
 };
 

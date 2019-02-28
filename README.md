@@ -2,6 +2,8 @@
 
 Running nodemon: https://github.com/standy/demo-react-next-typescript-routes-semantic-ui/tree/a73714c1ce91ad4c5079e5d479060a237b4aa366
 
+social media meta data: https://moz.com/blog/meta-data-templates-123
+
 # TypeScript Next.js example
 
 This is a really simple project that show the usage of Next.js with TypeScript.

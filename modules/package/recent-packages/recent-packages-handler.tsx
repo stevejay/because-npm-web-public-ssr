@@ -22,7 +22,6 @@ const RecentPackagesHandler = ({ mutate, nodeId }: AllProps) => {
   const appBus = useAppBus();
 
   React.useEffect(() => {
-    console.log("RecentPackagesHandler::useEffect", nodeId);
     mutate({ variables: { nodeId } });
   }, [nodeId]);
 
@@ -41,6 +40,6 @@ const RecentPackagesHandler = ({ mutate, nodeId }: AllProps) => {
 export default graphql<any, IGraphQLVariables>(UpdateRecentHistoryPackages)(
   React.memo(
     RecentPackagesHandler,
-    (prevProps, nextProps) => prevProps.nodeId !== nextProps.nodeId
+    (prevProps, nextProps) => prevProps.nodeId === nextProps.nodeId
   )
 );
