@@ -1,5 +1,5 @@
-import { INode } from "../../types/domain-types";
-import { ISearchEdges } from "../../types/graphql-types";
+import { INode } from "../../typings/domain-typings";
+import { ISearchEdges } from "../../typings/graphql-typings";
 
 // node search
 

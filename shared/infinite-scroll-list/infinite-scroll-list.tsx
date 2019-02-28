@@ -2,7 +2,7 @@ import { isEmpty } from "lodash";
 import React from "react";
 import { ApolloError } from "apollo-client";
 import Button, { ButtonType } from "../button";
-import { ISearchEdges } from "../../types/graphql-types";
+import { ISearchEdges } from "../../typings/graphql-typings";
 import { ErrorMessage, Message } from "../content-state";
 import styles from "./infinite-scroll-list.module.scss";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Message } from "../../../shared/content-state";
-import NoResultsImage from "./no-results-svg";
+import NoResultsImage from "./no-results-image";
 
 const NoResults = () => (
   <Message graphic={NoResultsImage}>

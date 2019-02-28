@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlaceholder from "react-placeholder";
 import "react-placeholder/lib/reactPlaceholder.css";
-import { INode } from "../../../types/domain-types";
+import { INode } from "../../../typings/domain-typings";
 import styles from "./package-detail.module.scss";
 
 type Props = {

@@ -4,7 +4,7 @@ import { useAppBus } from "../../../shared/app-bus";
 import Button, { ButtonType } from "../../../shared/button";
 import Section from "../section";
 import styles from "./discovering-section.module.scss";
-import { ReactComponent as GraphImage } from "./graph.svg";
+import GraphImage from "./graph-image";
 
 const DiscoveringSection = () => {
   const appBus = useAppBus();

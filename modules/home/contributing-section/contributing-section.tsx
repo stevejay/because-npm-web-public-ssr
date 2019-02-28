@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "../section";
 import styles from "./contributing-section.module.scss";
-import { ReactComponent as ContributingImage } from "./contributing.svg";
+import ContributingImage from "./contributing-image";
 
 const ContributingSection = () => (
   <Section className={styles.section}>

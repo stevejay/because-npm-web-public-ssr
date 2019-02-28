@@ -3,5 +3,5 @@
   "exports": {
     "*/index": "*"
   },
-  "imports": ["types"]
+  "imports": ["typings"]
 }
