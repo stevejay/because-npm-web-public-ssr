@@ -1,14 +1,9 @@
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/with-typescript)
-
-Running nodemon: https://github.com/standy/demo-react-next-typescript-routes-semantic-ui/tree/a73714c1ce91ad4c5079e5d479060a237b4aa366
-
-social media meta data: https://moz.com/blog/meta-data-templates-123
-
 ## TODO
 
 - https://github.com/zeit/next.js/wiki/Getting-ready-for-production
   - including headers and gzipping
 - Stable locality
+- social media meta data: https://moz.com/blog/meta-data-templates-123
 
 # TypeScript Next.js example
 

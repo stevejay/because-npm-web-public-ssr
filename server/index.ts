@@ -1,5 +1,5 @@
 import { createServer } from "http";
-import routes from "./routes";
+import routes from "../src/shared/routes";
 import * as next from "next";
 
 const port = parseInt(process.env.PORT || "", 10) || 3000;

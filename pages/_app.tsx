@@ -1,17 +1,17 @@
-import React from "react";
-import App, { Container, NextAppContext } from "next/app";
-import { ApolloProvider } from "react-apollo";
-import "normalize.css";
-import "what-input";
-import "../styles/app.scss";
-import { AppBusProvider } from "../shared/app-bus";
-import { Page, NotFooter } from "../shared/page";
-import { Header } from "../modules/header";
-import { Footer } from "../modules/footer";
-import { ScrollListener } from "../shared/scroll";
-import { SearchBar } from "../modules/search";
-import withApolloClient from "../with-apollo-client";
 import ApolloClient from "apollo-client";
+import App, { Container, NextAppContext } from "next/app";
+import "normalize.css";
+import React from "react";
+import { ApolloProvider } from "react-apollo";
+import "what-input";
+import { Footer } from "../src/modules/footer";
+import { Header } from "../src/modules/header";
+import { SearchBar } from "../src/modules/search";
+import { AppBusProvider } from "../src/shared/app-bus";
+import { NotFooter, Page } from "../src/shared/page";
+import { ScrollListener } from "../src/shared/scroll";
+import withApolloClient from "../src/apollo";
+import "../styles/app.scss";
 
 type Props = {
   apolloClient: ApolloClient<object>;

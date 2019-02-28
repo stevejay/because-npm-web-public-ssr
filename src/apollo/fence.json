@@ -1,0 +1,7 @@
+{
+  "tags": ["apollo"],
+  "exports": {
+    "index": "*"
+  },
+  "imports": ["package", "search"]
+}

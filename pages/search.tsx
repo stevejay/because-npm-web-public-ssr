@@ -1,12 +1,13 @@
 import React from "react";
 import { graphql, DataProps, Query } from "react-apollo";
-import { ErrorMessage, Loading } from "../shared/content-state";
-import { NodeSearch, SearchParams } from "../modules/search/graphql/queries";
+import { ErrorMessage, Loading } from "../src/shared/content-state";
 import {
+  NodeSearch,
+  SearchParams,
   INodeSearchResult,
   INodeSearchVariables
-} from "../modules/search/types";
-import { SearchResultList } from "../modules/search";
+} from "../src/modules/search";
+import { SearchResultList } from "../src/modules/search";
 import styles from "./search.module.scss";
 
 class NodeSearchQuery extends Query<INodeSearchResult, INodeSearchVariables> {}

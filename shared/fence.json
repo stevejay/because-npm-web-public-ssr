@@ -1,7 +1,0 @@
-{
-  "tags": ["shared"],
-  "exports": {
-    "*/index": "*"
-  },
-  "imports": ["typings"]
-}

@@ -1,0 +1,15 @@
+{
+  "tags": ["pages"],
+  "exports": {
+    "index": "*"
+  },
+  "imports": [
+    "apollo",
+    "shared",
+    "home",
+    "footer",
+    "header",
+    "package",
+    "search"
+  ]
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { PackageDetail, RecentPackages } from "../modules/package";
+import { PackageDetail, RecentPackages } from "../src/modules/package";
 import styles from "./package.module.scss";
 import { NextDocumentContext } from "next/document";
 

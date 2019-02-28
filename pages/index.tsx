@@ -1,8 +1,7 @@
 import { stubTrue } from "lodash";
 import React from "react";
-import { ScrollToTop } from "../shared/scroll";
-import ContributingSection from "../modules/home/contributing-section";
-import DiscoveringSection from "../modules/home/discovering-section";
+import { ScrollToTop } from "../src/shared/scroll";
+import { ContributingSection, DiscoveringSection } from "../src/modules/home";
 import styles from "./index.module.scss";
 
 const IndexPage = () => (

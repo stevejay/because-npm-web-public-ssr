@@ -1,5 +1,5 @@
 import React from "react";
-import { LegalPageContainer } from "../shared/page";
+import { LegalPageContainer } from "../src/shared/page";
 
 const CreditsPage = () => (
   <LegalPageContainer>

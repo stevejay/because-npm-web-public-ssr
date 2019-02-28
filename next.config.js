@@ -9,6 +9,7 @@ module.exports = withTypescript(
     withSass({
       cssModules: true,
       webpack(config, options) {
+        // TODO get URI from env:
         config.plugins.push(
           new webpack.EnvironmentPlugin({
             REACT_APP_GRAPHQL_SERVER_URI:
@@ -19,7 +20,6 @@ module.exports = withTypescript(
         // Silence mini-css-extract-plugin generating lots of warnings for CSS ordering.
         // We use CSS modules that should not care for the order of CSS imports, so we
         // should be safe to ignore these.
-        //
         // See: https://github.com/webpack-contrib/mini-css-extract-plugin/issues/250
         config.plugins.push(
           new FilterWarningsPlugin({

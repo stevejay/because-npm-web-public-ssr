@@ -1,6 +1,6 @@
 import React from "react";
-import { EMAIL, WEBSITE } from "../constants";
-import { LegalPageContainer } from "../shared/page";
+import { EMAIL, WEBSITE } from "../src/shared/constants";
+import { LegalPageContainer } from "../src/shared/page";
 
 const TermsPage = () => (
   <LegalPageContainer>
