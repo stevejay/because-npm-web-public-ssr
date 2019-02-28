@@ -6,6 +6,8 @@ social media meta data: https://moz.com/blog/meta-data-templates-123
 
 ## TODO
 
+- https://github.com/zeit/next.js/wiki/Getting-ready-for-production
+  - including headers and gzipping
 - Stable locality
 
 # TypeScript Next.js example
