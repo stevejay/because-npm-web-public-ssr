@@ -1,5 +1,4 @@
 const path = require("path");
-const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 
 module.exports = (baseConfig, env, config) => {
   config.module.rules.push({
@@ -22,19 +21,10 @@ module.exports = (baseConfig, env, config) => {
       },
       { loader: "sass-loader" }
     ],
-    // loaders: ["style-loader", "css-loader?modules", "sass-loader"],
     include: path.resolve(__dirname, "../")
   });
 
   config.resolve.extensions.push(".ts", ".tsx");
-
-  // config.plugins.push(
-  //   new ForkTsCheckerWebpackPlugin({
-  //     async: false,
-  //     checkSyntacticErrors: true,
-  //     formatter: require("react-dev-utils/typescriptFormatter")
-  //   })
-  // );
 
   return config;
 };
