@@ -10,7 +10,7 @@
 
 import { ComponentType } from "react";
 import { LinkProps, Router as TRouter } from "next-routes";
-import * as createRoutes from "next-routes";
+import createRoutes from "next-routes";
 import Routes from "next-routes";
 
 // const createRoutes = require("next-routes");

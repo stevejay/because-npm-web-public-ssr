@@ -10,9 +10,14 @@ import { Header } from "../modules/header";
 import { Footer } from "../modules/footer";
 import { ScrollListener } from "../shared/scroll";
 import { SearchBar } from "../modules/search";
-import apolloClient from "../apollo-client";
+import withApolloClient from "../with-apollo-client";
+import ApolloClient from "apollo-client";
 
-class MyApp extends App {
+type Props = {
+  apolloClient: ApolloClient<object>;
+};
+
+class MyApp extends App<Props> {
   static async getInitialProps({ Component, ctx }: NextAppContext) {
     let pageProps = {};
 
@@ -24,11 +29,11 @@ class MyApp extends App {
   }
 
   render() {
-    const { Component, pageProps } = this.props;
+    const { Component, pageProps, apolloClient } = this.props;
     return (
-      <ApolloProvider client={apolloClient}>
-        <AppBusProvider>
-          <Container>
+      <Container>
+        <ApolloProvider client={apolloClient}>
+          <AppBusProvider>
             <Page>
               <NotFooter>
                 <ScrollListener />
@@ -38,11 +43,11 @@ class MyApp extends App {
               </NotFooter>
               <Footer />
             </Page>
-          </Container>
-        </AppBusProvider>
-      </ApolloProvider>
+          </AppBusProvider>
+        </ApolloProvider>
+      </Container>
     );
   }
 }
 
-export default MyApp;
+export default withApolloClient(MyApp);
