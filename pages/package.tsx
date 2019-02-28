@@ -1,6 +1,5 @@
 import React from "react";
-// import { PackageDetail, RecentPackages } from "../modules/package";
-import { RecentPackages } from "../modules/package";
+import { PackageDetail, RecentPackages } from "../modules/package";
 import styles from "./package.module.scss";
 import { NextDocumentContext } from "next/document";
 
@@ -10,9 +9,9 @@ type Props = {
 
 const PackagePage = ({ nodeId }: Props) => (
   <main className={styles.container}>
-    {/* <section className={styles.section}>
+    <section className={styles.section}>
       <PackageDetail nodeId={nodeId} />
-    </section> */}
+    </section>
     <aside className={styles.aside}>
       <RecentPackages nodeId={nodeId} />
     </aside>

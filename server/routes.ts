@@ -9,14 +9,14 @@
 // routes.add("terms");
 
 import { ComponentType } from "react";
-import { LinkProps, Router as TRouter } from "next-routes";
-import createRoutes from "next-routes";
-import Routes from "next-routes";
+import { LinkProps, Router as TRouter } from "@yolkai/next-routes";
+import createRoutes from "@yolkai/next-routes";
+// import Routes from "@yolkai/next-routes";
 
 // const createRoutes = require("next-routes");
 
 // @ts-ignore Types are broken
-const routes: Routes = createRoutes();
+const routes = createRoutes();
 
 routes.add("index", "/");
 routes.add("package", "/package/:nodeId");

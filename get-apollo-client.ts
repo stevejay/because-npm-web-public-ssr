@@ -15,12 +15,12 @@ import { resolvers as searchResolvers } from "./modules/search";
 
 // Polyfill fetch() on the server (used by apollo-client)
 if (!process.browser) {
-  (<any>global).fetch = fetch;
+  (global as any).fetch = fetch;
 }
 
 let apolloClient: ApolloClient<object> | null = null;
 
-function createCache(initialState?: any) {
+function createCache(initialState: any) {
   const cache: any = new InMemoryCache({
     cacheRedirects: {
       Query: {

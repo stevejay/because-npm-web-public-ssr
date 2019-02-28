@@ -4,6 +4,10 @@ Running nodemon: https://github.com/standy/demo-react-next-typescript-routes-sem
 
 social media meta data: https://moz.com/blog/meta-data-templates-123
 
+## TODO
+
+- Stable locality
+
 # TypeScript Next.js example
 
 This is a really simple project that show the usage of Next.js with TypeScript.
