@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import PackageDetail from "../package-detail";
-import MockNextContext from "../../../../../test-utils/MockNextContext";
+import { MockNextContext } from "../../../../shared/test-utils";
 
 storiesOf("Packages/PackageDetail", module)
   .add("Loading", () => (

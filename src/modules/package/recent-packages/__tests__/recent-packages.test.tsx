@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "react-testing-library";
 import RecentPackages from "../recent-packages";
 import { noop } from "lodash";
-import MockNextContext from "../../../../../test-utils/MockNextContext";
+import { MockNextContext } from "../../../../shared/test-utils";
 
 function renderRecentPackages(packages: string[]) {
   return render(

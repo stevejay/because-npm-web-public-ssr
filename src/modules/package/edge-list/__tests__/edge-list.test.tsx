@@ -11,7 +11,7 @@ import {
   IEdgeCommentSearchResult
 } from "../../types";
 import deepFreeze from "@ef-carbon/deep-freeze";
-import MockNextContext from "../../../../../test-utils/MockNextContext";
+import { MockNextContext } from "../../../../shared/test-utils";
 import userEvent from "user-event";
 
 const NODE_ID = "edge-1";

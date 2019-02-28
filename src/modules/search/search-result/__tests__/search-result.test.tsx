@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "react-testing-library";
 import SearchResult from "../search-result";
-import MockNextContext from "../../../../../test-utils/MockNextContext";
+import { MockNextContext } from "../../../../shared/test-utils";
 
 function renderSearchResult(edgeCount: number) {
   return render(

@@ -2,10 +2,9 @@ import React from "react";
 import { render } from "react-testing-library";
 import SearchBar from "../search-bar";
 import { noop } from "lodash";
-// import { MemoryRouter } from "react-router";
 import { MockedProvider } from "react-apollo/test-utils";
 import userEvent from "user-event";
-import MockNextContext from "../../../../../test-utils/MockNextContext";
+import { MockNextContext } from "../../../../shared/test-utils";
 
 function renderSearchBar(handleSearchTermChange = noop, handleSubmit = noop) {
   return render(

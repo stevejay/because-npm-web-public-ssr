@@ -1,7 +1,7 @@
 import Logo from "../logo";
 import React from "react";
 import { render } from "react-testing-library";
-import MockNextContext from "../../../../test-utils/MockNextContext";
+import { MockNextContext } from "../../test-utils";
 
 function renderHeader() {
   return render(

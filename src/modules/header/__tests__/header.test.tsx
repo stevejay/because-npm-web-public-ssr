@@ -1,7 +1,7 @@
 import Header from "../header";
 import React from "react";
 import { render } from "react-testing-library";
-import MockNextContext from "../../../../test-utils/MockNextContext";
+import { MockNextContext } from "../../../../src/shared/test-utils";
 
 function renderHeader() {
   return render(

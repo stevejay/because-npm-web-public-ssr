@@ -99,7 +99,7 @@
       "\\.(s?css)$": "identity-obj-proxy"
     },
     "setupFilesAfterEnv": [
-      "<rootDir>/test-utils/jest.setup.js"
+      "<rootDir>/jest.setup.js"
     ]
   }
 }

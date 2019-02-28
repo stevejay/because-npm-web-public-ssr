@@ -1,6 +1,6 @@
 import { noop } from "lodash";
 import React from "react";
-import MockNextContext from "../../../../../test-utils/MockNextContext";
+import { MockNextContext } from "../../../../shared/test-utils";
 import { storiesOf } from "@storybook/react";
 import RecentPackages from "../recent-packages";
 

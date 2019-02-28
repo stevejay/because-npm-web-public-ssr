@@ -4,5 +4,5 @@
     "*/index": "*",
     "constants": "*"
   },
-  "imports": ["typings", "test-utils"]
+  "imports": ["typings"]
 }
