@@ -2,7 +2,7 @@
 
 This is the SSR version of the [because-npm-web-public](https://github.com/stevejay/because-npm-web-public) app.
 
-It is deployed to Heroku [here](https://because-npm-ssr.herokuapp.com/package/pure-react-carousel).
+It is deployed to Heroku [here](https://because-npm-ssr.herokuapp.com/). (It may take several seconds for the Dyno to wake up.)
 
 ## TODO
 
